@@ -162,7 +162,7 @@ src="https://user-images.githubusercontent.com/41671631/175300080-6e72001c-78dd-
 
 ```lua
 -- preview definition
-nnoremap <silent> gd <cmd>lua require'lspsaga.provider'.preview_definition()<CR>
+nnoremap <silent> gd <cmd>lua require'lspsaga.definition'.preview_definition()<CR>
 -- or use command
 nnoremap <silent> gd :Lspsaga preview_definition<CR>
 
@@ -181,8 +181,8 @@ require'lspsaga.diagnostic'.show_line_diagnostics()<CR>
 
 nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>``lua
 -- jump diagnostic
-nnoremap <silent> [e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>
-nnoremap <silent> ]e <cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>
+nnoremap <silent> [e <cmd>lua require'lspsaga.diagnostic'.goto_prev()<CR>
+nnoremap <silent> ]e <cmd>lua require'lspsaga.diagnostic'.goto_next()<CR>
 -- or use command
 nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
 nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
