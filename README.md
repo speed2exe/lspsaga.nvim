@@ -79,8 +79,8 @@ kind[type number][2] = icon
 ### Async Lsp Finder
 
 ```lua
--- lsp provider to find the cursor word definition and reference
-nnoremap <silent> gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
+-- lsp finder to find the cursor word definition and reference
+nnoremap <silent> gh <cmd>lua require'lspsaga.finder'.lsp_finder()<CR>
 -- or use command LspSagaFinder
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 ```
